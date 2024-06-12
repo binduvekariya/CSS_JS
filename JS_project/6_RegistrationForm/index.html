@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body class="h-screen w-screen bg-gradient-to-r from-indigo-950 to-sky-950 overflow-hidden">
+    <div class="flex justify-center items-center flex-col mx-auto mt-32 w-2/4  bg-white text-black">
+        <h1 class="text-4xl text-center font-semibold mt-4">Registration form</h1>
+        <form id="form" class="mx-auto" onsubmit="validateInputs()">
+            <p class="input-control text-xl mb-5 mt-10">
+                <label for="name" class="font-semibold">Name</label>
+                <input type="text" class="text-black border-2 border-gray-500" id="name" name="name" placeholder="Enter Your full name" ><br>
+                <span class="error text-sm text-red-600" id="nameError"></span>
+            </p>
+        
+            <p class="input-control text-xl mb-5">
+                <label for="email" class="font-semibold">Email</label>
+                <input type="text" class="text-black border-2 border-gray-500" id="email" name="email" placeholder="Enter valid email address"><br>
+                <span class="error text-sm text-red-600" id="emailError"></span>
+            </p>
+
+            <p class="input-control text-xl mb-5">
+                <label for="password" class="font-semibold">Password</label>
+                <input type="password" class="text-black border-2 border-gray-500" id="password" name="password" placeholder="Enter password"><br>
+                <span class="error text-sm text-red-600" id="passwordError"></span>
+            </p>
+            <p class="input-control text-xl mb-5">
+                <label for="cpassword" class="font-semibold">Confirm Password</label>
+                <input type="password" class="text-black border-2 border-gray-500" id="cpassword" name="cpassword" placeholder="Enter password again"><br>
+                <span class="error text-sm  text-red-600" id="cpasswordError"></span>
+            </p>
+
+            <p class="input-control text-xl mb-5">
+                <input type="checkbox" name="agree" id="agree" style="height: 16px; width: 16px;">
+                <label for="agree" class="text-lg">I agree to the terms and conditions</label><br>
+                <span class="error text-sm text-red-600" id="agreeError"></span>
+            </p>
+
+            <p class="text-xl m-5 flex gap-5 justify-center item-center">
+                <strong><input type="submit" value="submit" id="submit" class="border border-1 bg-gradient-to-r from-indigo-800 to-sky-800 hover:from-blue-500 hover:to-sky-500 p-1 px-3"></strong>
+                <strong><input type="reset" value="reset" id="reset" class="border border-1 p-1 px-3 bg-gradient-to-r from-indigo-800 to-sky-800 hover:from-blue-500 hover:to-sky-500" onclick="resetFunc()"></strong>
+            </p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+  
+</body>
+
+</html>

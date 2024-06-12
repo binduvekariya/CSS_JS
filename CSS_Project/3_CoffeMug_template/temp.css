@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow: hidden;
+    background-color: wheat;
+}
+
+.container {
+    margin: 15%;
+    margin-left: 30%;
+    display: flex;
+    height: 40%;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.box2 {
+    background-color: #fff;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.box1 {
+    height: 50%;
+    width: 50%;
+}
+.box1 img {
+    overflow: hidden;
+    object-fit: cover; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#price {
+    font-size: 35px;
+    font-weight: 700;
+    color: green;
+}
+
+#price2 {
+    text-decoration: line-through;
+}
+button {
+    font-size: larger; 
+    padding: 2px 15px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: center;
+}
+
+button img {
+    height: fit-content;
+    width: 30px;
+}
+
+.cont {
+    padding: 5px 0;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#heading {
+    letter-spacing: 5px;
+    color: grey;
+}

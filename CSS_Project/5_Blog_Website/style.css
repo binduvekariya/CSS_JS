@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header {
+    margin: 1.5rem;   
+    display: flex;
+    justify-content: space-between;
+}
+
+#subscribe {
+    text-decoration: underline;
+    color: dimgrey;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+img {
+    height: 1.9rem;
+    width: 1.9rem;
+}
+button {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.container {
+    margin: 2rem;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+    padding: 1.8rem;
+    box-shadow:1px 3px 7px 4px lightgray ;
+    border: 3px solid lightgray;
+}
+
+.small {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(41, 41, 151);
+}
+
+.date {
+    margin-bottom: 0.5rem;
+    color: dimgray;
+}
